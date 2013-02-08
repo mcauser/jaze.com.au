@@ -1,0 +1,39 @@
+extends layout
+
+block css
+	link(rel="stylesheet", href="/css/home.css")
+
+block js
+	script(src="/js/home.js")
+
+block content
+	#body.page-row
+		.container_16
+			
+			#title-bar.page-section
+				.heading We believe in the web
+				p.subheading Everybody should have a compelling website. We've spent ten years developing a unique web platform to power this vision. We're behind hundreds of small business websites, community groups, magazines, industry associations and back-end business systems. We are Jaze, and our platform is Bluetree.
+			
+			#recently-launched.page-section
+				.container
+					
+					.details
+						h4 Recently launched
+							#first_slide_info.website
+								h3: a(href="http://www.cosl.com.au", target="_blank") Credit Ombudsman Service Limited
+								a(href="http://www.cosl.com.au", target="_blank") www.cosl.com.au
+							#second_slide_info.website(style="display:none;")
+								h3: a(href="http://www.bodymindlife.com", target="_blank") BodyMindLife
+								a(href="http://www.bodymindlife.com", target="_blank") www.bodymindlife.com
+							#third_slide_info.website(style="display:none;")
+								h3: a(href="http://www.balmainbodies.com.au", target="_blank") Balmain Bodies Pilates Studio
+								a(href="http://www.balmainbodies.com.au", target="_blank") www.balmainbodies.com.au
+					
+					.images
+						.shadow.has-transparency
+							a#first_slide.image.full.first(href="http://www.cosl.com.au", target="_blank")
+								img(src="/img/home/cosl.jpg")
+							a#second_slide.image.full.second(href="http://www.bodymindlife.com", target="_blank")
+								img(src="/img/home/bml.jpg")
+							a#third_slide.image.full.third(href="http://www.balmainbodies.com.au", target="_blank")
+								img(src="/img/home/bb.jpg")

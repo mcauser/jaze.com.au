@@ -1,0 +1,116 @@
+/** ..:: Jaze Technology ::.. **/
+
+
+/* Reset */
+* { padding: 0; margin: 0; }
+
+/* General*/
+body { font-size: 14px; line-height: 1; font-family: Baskerville, Times, Palatino, Georgia, serif; color: #333; background: #f7f7f7 url("/img/layout/bg-site.jpg") repeat-x left top; }
+
+a { color: #80bf26; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p { margin: 0 0 1.3em; line-height: 1.5em; }
+ul, ol { margin: 10px 0 10px 30px; line-height: 1.5em; }
+ul { margin: 10px 0; }
+ul li { margin: 0 0 10px 30px; }
+blockquote { line-height: 1.3em; margin: 10px 0 10px 30px; }
+img { border: 0; }
+
+h1,h2,h3,h4,h5 { margin: 0 0 20px; font-family: Baskerville, Times, Palatino, Georgia, serif; font-weight: lighter; line-height: 1; font-style: italic; }
+h1 small, h2 small, h3 small { color: #999; font-size: 0.66em; }
+h1 { font-size: 48px; color: #222; letter-spacing: -1px; }
+h2 { color: #222; font-size: 24px; margin: 20px 0 5px; }
+h2:first-child, h2.first-child { margin: 0 0 20px; }
+h2 small { font-size: 12px; color: #666; }
+h3 { color: #222; font-size: 15px; margin: 20px 0 0; line-height: 2em; }
+h3:first-child, h3.first-child { line-height:1.3em; margin:0 0 10px; }
+
+/** Common **/
+.hide { display: none; }
+.clearfix, .clear { display: block; clear: both; padding-top: 20px; }
+.pie { behavior: url("/js/pie.htc"); }
+.border-box {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cntnr { position: relative; overflow: hidden; }
+.spacer { padding: 20px 0; }
+
+.page-section { margin-top: 30px; padding: 30px 0 0; border-top: 1px solid #ccc; border-color: rgba(0,0,0,0.1); }
+
+/* Structure */
+.row-container { position: relative; width: 960px; margin: auto; }
+
+/* Forms */
+.field-container { overflow: hidden; padding-bottom: 6px; }
+.field-name, .field { float: left; padding: 6px; }
+.field-name { width: 140px; }
+.field { width: 190px; background: white; border: 1px solid #ccc; }
+
+
+/** HEADER **/
+#header { height: 72px; padding: 30px 0 0; }
+
+#header .logo { margin: 0; float: left; }
+#header .logo a { display: block; text-indent: -999in; width: 245px; height: 72px; background: url("/img/layout/jaze-logo.png") top left no-repeat; }
+
+#header .subtitle { float: right; color: #446784; }
+
+
+/** NAVIGATION **/
+#nav {
+	clear: left;
+	margin: 30px 0 -30px;
+	position: relative;
+}
+#nav ul {
+	border-top: 1px solid #ccc;
+	border-color: rgba(0,0,0,0.1);
+	font-weight: bold;
+	font-size: 16px;
+	padding: 10px;
+	text-align: center;
+}
+#nav li { display: inline-block; margin: 0; padding: 0; }
+#nav .interpunct { display: inline-block; padding: 0 5px 0 0; color: #999; }
+#nav a { display: inline-block; color: #466380; padding: 5px 15px; line-height: 1;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+#nav a:hover { background-color: white; text-decoration: none; }
+#nav .selected, #nav .selected:hover {
+	background-color: #466380;
+	color: white;
+	/* -webkit-box-shadow: 0 1px 2px black inset; */
+	-moz-box-shadow: 0 1px 2px black inset;
+}
+
+
+/** BODY **/
+#body { overflow: hidden; padding-bottom: 30px; }
+
+/* Title Bar */
+#title-bar { font-size: 23px; }
+#title-bar .heading { width: 960px; height: 70px; margin: 0 0 20px; text-indent: -9999in; }
+
+/* Contact details */
+#contact { font-size: 13px; margin-top: 0; line-height: 1.3em; padding-bottom: 60px; }
+#contact .container { overflow: hidden; }
+#contact h2 { float: left; font-style: normal; }
+#contact h3 { font-style: normal; font-weight: bold; }
+#contact .details { float: right; font-family: Arial; }
+#contact .detail { float: left; padding: 0 20px 40px 0; width: 140px; }
+#contact .detail small { display: block; padding-top: 4px; font-size: 12px; color: #999; }
+
+#contact .map { float: right; width: 320px; height: 270px; font-family: Arial; background: url("/img/layout/jaze-map.jpg") bottom right no-repeat; }
+
+
+/** COPYRIGHT **/
+#copyright { font-family: Arial; font-size: 12px; color: #999; padding: 10px 0 80px; }
+#copyright a { color: #999; }
+#copyright a:hover { color: #666; }
+#copyright .text { padding:10px 0 0; }
+#copyright .logo { float:right; display:block; height:25px; padding:10px 60px 0 0; background:url("/img/layout/jaze_logo.png") top right no-repeat; }

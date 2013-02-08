@@ -1,0 +1,14 @@
+/** ..:: Jaze Technology | Showcase ::.. **/
+
+/* Title Bar */
+#title-bar .heading {
+	height: 100px;
+	background: transparent url("/img/layout/heading-showcase.png") repeat-x left top;
+}
+
+/** Projects **/
+#projects { padding-bottom: 40px; }
+#projects .project { margin-top: 40px; border-top: 1px solid #ddd; padding-top: 10px; }
+#projects img { margin-top: 10px; border: 5px solid white; -moz-box-shadow: 0 0 4px rgba(0,0,0,0.2); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.2); outline: none; cursor: default; }
+#projects .url { display: block; float: right; font-family: Arial; padding: 5px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+#projects .url:hover { background-color: white; }

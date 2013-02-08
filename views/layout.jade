@@ -1,0 +1,90 @@
+!!! strict
+html
+	head
+		title Jaze Technology - We believe in the web
+		meta(http-equiv="Content-Type", content="text/html; charset=iso-8859-1")
+		
+		meta(name="Description", content="Online Publishing, Web Apps & Design")
+		meta(name="Keywords", content="Web apps, websites, web sites, CMS, content management system, Jaze, Jaze Digital, e-learning, elearning, web design, design")
+		meta(name="google-site-verification", content="joxF3SADprRgwOu75Yori28AL-_F0qIhXbTlLx-d9b8")
+		link(rel="stylesheet", href="/css/grid.css")
+		link(rel="stylesheet", href="/css/site.css")
+		block css
+		script
+			window.Aurora = {}
+		script(src="/js/core.js")
+		//if lte IE 6
+			script(src="/js/transparency.js")
+		script(src="/js/home.js")
+		script
+			var callActionURL = '/callAction.cfm';
+		script(src="/js/modernizr-1.5.min.js")
+	
+	body(id='page_'+id)
+		div(style="position: absolute;"): a(name="top", id="top") &nbsp;
+		
+		#page-container
+			#header.page-row
+				.container_16
+					h1.logo: a(href="/Home") Jaze Technology
+					h2.subtitle Online Publishing, Web Apps &amp; Design
+			
+			#nav.page-row
+				.container_16
+					ul
+						li: a(href="/home", class="#{id=='home'?'selected':''}").pie Home
+						li: span.interpunct &middot;
+						li: a(href="/about", class="#{id=='about'?'selected':''}").pie About
+						li: span.interpunct &middot;
+						li: a(href="/showcase", class="#{id=='showcase'?'selected':''}").pie Showcase
+			
+			block content
+		
+		#contact.page-section
+			.container_16
+				h2 Get in touch with us
+				
+				div(style="width: 320px; height: 270px; float: right;")
+				.details
+					.detail.email
+						h3 Email
+						a(href="mailto:info@jaze.com.au") info@jaze.com.au
+					.detail.post
+						h3 Write
+						| Locked Bag 2000/143
+						br
+						| Surry Hills
+						br
+						| 2010 NSW
+					.detail.call
+						h3 Call
+						| (02) 8284 6285
+						small +612 8284 6285
+		
+		if id != 'home'
+			#copyright.page-row
+					.container_16
+						a.logo.has-transparency(href="http://www.jaze.com.au", target="_blank")
+							| powered by 
+							span.hide Jaze
+						.text Copyright &copy; 2013 Jaze Technology
+						.text.hide(style="clear:left;padding:0;")
+							strong ABN:
+							|  98 697 095 230 | 
+							strong National RTO Provider No:
+							|  90053
+		
+		//- Google Analytics jaze.com.au = UA-91376-1
+		if process.env.NODE_ENV == 'production'
+			script
+				var _gaq = _gaq || [];
+				_gaq.push([ '_setAccount', 'UA-91376-1' ]);
+				_gaq.push([ '_trackPageview' ]);
+				_gaq.push([ '_trackPageLoadTime' ]);
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[ 0 ]; s.parentNode.insertBefore(ga, s);
+				})();
+		
+		block js

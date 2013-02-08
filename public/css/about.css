@@ -1,0 +1,72 @@
+/** ..:: Jaze Technology | About ::.. **/
+
+/* Title Bar */
+#title-bar .heading {
+	height: 90px;
+	background: transparent url("/img/layout/heading-about.png") no-repeat center top;
+}
+
+/** Info **/
+#info {
+	background: white;
+	padding: 30px 0;
+	-moz-box-shadow: 0 1px 5px #ccc inset;
+	-webkit-box-shadow: 0 1px 5px #ccc inset;
+	box-shadow: 0 1px 5px #ccc inset;
+}
+#info p { font-family: Helvetica, Arial; font-size: 15px; }
+#info .what { padding-right: 15px; }
+#info .how { padding-left: 15px; }
+
+
+/** People **/
+#people { padding: 30px 0 0 5px; overflow: visible; }
+#people .person {
+	background: white;
+	display: block;
+	float: left;
+	margin: 0 30px 30px 0;
+	text-decoration: none;
+	width: 130px;
+	
+	-moz-box-shadow: 0 1px 4px #ccc;
+	-webkit-box-shadow: 0 1px 4px #ccc;
+	box-shadow: 0 1px 4px #ccc;
+}
+#people .person span { display: block; }
+#people img { width: 124px; border: 3px solid white; }
+#people .details { padding: 7px 10px 10px; font-family: Arial; text-align: center; }
+#people .details .name { display: block; font-weight: bold; color: #333; }
+#people .person:hover .details .name { color: #000; }
+#people .details .position { font-size: 11px; color: #999; }
+
+/* Twitter Popup */
+.twitter-popup {
+	background-color: white;
+	border: 2px solid #e3fec3;
+	color: #999;
+	font-family: Arial;
+	font-size: 11px;
+	padding: 10px 15px;
+	position: absolute;
+	max-width: 200px;
+	z-index: 10;
+	
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	
+	box-shadow: 0 1px 4px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.33);
+}
+.twitter-popup .arrow { position: absolute; z-index: 11; width: 20px; height: 12px; bottom: -12px; left: 10px; background: url("/img/layout/twitter-arrow.png") top left no-repeat; }
+
+.twitter-popup ul, .twitter-popup li { margin: 0; list-style: none; }
+
+.twitter-popup .loading {
+	background: url("/img/loading.gif") top left no-repeat;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+}
